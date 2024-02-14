@@ -1,12 +1,18 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
     {
       "type": "java",
-      "name": "Application",
+      "name": "Application (run)",
+      "request": "launch",
+      "mainClass": "com.ciitizen.gateway.router.Application",
+      "projectName": "gateway-router",
+      "envFile": "${workspaceFolder}/local.env",
+      "vmArgs": "--add-opens java.base/java.time=ALL-UNNAMED",
+    },
+    {
+      "type": "java",
+      "name": "Application (build & run)",
       "request": "launch",
       "mainClass": "com.ciitizen.gateway.router.Application",
       "projectName": "gateway-router",
